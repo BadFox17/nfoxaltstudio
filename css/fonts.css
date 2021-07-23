@@ -1,0 +1,20 @@
+	/* Модуль Установка шрифтов */
+	
+	@font-face {
+		font-family:'Reactor7Newcopy';
+		src:url('../Fonts/Reactor7Newcopy.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	@font-face {
+		font-family:'Roboto';
+		src:url('../Fonts/Roboto Bold.ttf') format('truetype');
+		src:url('../Fonts/Roboto Light Italic.ttf') format('truetype');
+		src:url('../Fonts/Roboto Light.ttf') format('truetype');
+		src:url('../Fonts/Roboto Medium Italic.ttf') format('truetype');
+		src:url('../Fonts/Roboto Regular.ttf') format('truetype');
+		src:url('../Fonts/Roboto.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
