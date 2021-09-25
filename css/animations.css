@@ -1,0 +1,21 @@
+
+	@keyframes morgalka {
+		0% {
+			text-shadow: red 0px 0px 0px;
+		}
+		50% {
+			text-shadow: red 0px 0px 15px;
+		}
+		100% {
+			text-shadow: red 0px 0px 0px;
+		}
+	}
+
+	@keyframes in {
+		0% {
+			opacity: 0%;
+		}
+		100% {
+			opacity: 100%;
+		}
+	}

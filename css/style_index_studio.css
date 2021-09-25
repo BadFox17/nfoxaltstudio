@@ -15,15 +15,15 @@
 	
 	/* Трекер сроллбара */
 	::-webkit-scrollbar-track {
-		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-		-webkit-border-radius: 10px;
+		box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		border-radius: 10px;
 		border-radius: 10px;
 	}
 	::-webkit-scrollbar-thumb {
-		-webkit-border-radius: 0px;
+		border-radius: 0px;
 		border-radius: 0px;
 		background: rgba(255,0,0,0.9);
-		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+		box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 	}
 	::-webkit-scrollbar-thumb:window-inactive {
 		background: rgba(0,0,0,0.0);
@@ -43,21 +43,14 @@
 		display: flex;
 		flex-direction: column;
 		/*align-items: center;*/
-		border: 3px solid white;
 		min-height: 100%;
 		overflow: hidden;
 		padding: 30px 30px 0 30px;
 	}
 
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		border: 3px solid red;
-	}
-
 	.container {
 		max-width: 1920px;
+		width: 100%;
 		border: 3px solid white;
 		margin: 0px auto;
 		flex: 1 1 auto;
@@ -93,20 +86,34 @@
 		}
 	}
 
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: 3px solid yellow;
+	}
+
 	.header {
-		border: 3px solid white;
+		border: 3px solid red;
 		margin: 0 0 70px 0;
+		opacity: 0%;
+		animation: in 1s ease-in 0s 1 forwards;
 	}
 
 	.middle {
-		border: 3px solid white;
+		width: 100%;
+		border: 3px solid green;
+		opacity: 0%;
+		animation: in 1.5s ease-in 0s 1 forwards;
 	}
 
 	.footer {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		border: 3px solid white;
+		border: 3px solid blue;
+		opacity: 0%;
+		animation: in 2s ease-in 0s 1 forwards;
 	}
 
 	/*Текст*/
@@ -117,9 +124,15 @@
 		text-align: center;
 	}
 
+	.studio_name span {
+		text-shadow: red 0px 0px 10px;
+		transition: text-shadow 1s ease-in-out 1s;
+		animation: morgalka 3s ease-in-out 0s infinite forwards;
+	}
+
 	.text {
 		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-		font-size: 72px;
+		font-size: 36px;
 		color: aliceblue;
 		text-align: center;
 	}
@@ -135,4 +148,25 @@
 		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 		font-size: 36px;
 		color: red;
+	}
+
+	/* Линки */
+
+	#links_block {
+		border: 3px solid rgba(0,255,255,1);
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+	}
+
+	.item {
+		padding: 5px;
+	}
+
+	.item_image {
+		width: 50px;
 	}
