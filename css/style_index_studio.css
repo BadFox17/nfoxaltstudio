@@ -101,6 +101,9 @@
 	}
 
 	.middle {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		width: 100%;
 		border: 3px solid green;
 		opacity: 0%;
@@ -109,7 +112,7 @@
 
 	.footer {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		align-items: center;
 		border: 3px solid blue;
 		opacity: 0%;
@@ -118,8 +121,10 @@
 
 	/*Текст*/
 	.studio_name {
-		font-family: roboto, Arial, "Times New Roman", sans-serif;
-		font-size: 72px;
+		font-family: Roboto, Arial, "Times New Roman", sans-serif;
+		font-size: 100px;
+		font-weight: 300;
+		letter-spacing: 30px;
 		color: rgba(255, 0, 0, 1.0);
 		text-align: center;
 	}
@@ -130,24 +135,39 @@
 		animation: morgalka 3s ease-in-out 0s infinite forwards;
 	}
 
-	.text {
-		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	.studio_subname {
+		font-family: Roboto, Arial, "Times New Roman", sans-serif;
+		font-size: 24px;
+		font-weight: 100;
+		letter-spacing: 10px;
+		color: rgb(255, 255, 255);
+		text-align: center;
+	}
+
+	.text_follow_me {
+		font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
 		font-size: 36px;
+		font-weight: 100;
+		letter-spacing: 5px;
 		color: aliceblue;
+		padding: 10px;
+		border: 3px solid red;
 		text-align: center;
 	}
 
 	.ver {
-		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-		font-size: 36px;
+		font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 20px;
 		color: red;
+		font-weight: 300;
 	}
 
 	.footer__text {
 		margin: 0px auto;
-		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-		font-size: 36px;
-		color: red;
+		font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 20px;
+		font-weight: 300;
+		color: rgb(197, 197, 197);
 	}
 
 	/* Линки */
@@ -169,4 +189,11 @@
 
 	.item_image {
 		width: 50px;
+		border-radius: 25px;
+		transition: width 0.5s, border-radius 0.1s ease-out 0s
+	}
+
+	.item_image:hover {
+		width: 70px;
+		border-radius: 10px;
 	}
