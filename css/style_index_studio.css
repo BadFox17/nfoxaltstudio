@@ -236,3 +236,8 @@
 		color: aliceblue;
 		padding: 10px;
 	}
+
+	#donate {
+		border: 3px solid rgb(76, 0, 255);
+		padding: 10px;
+	}
