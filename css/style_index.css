@@ -1,0 +1,224 @@
+	
+	/* Модуль Основной стиль */
+	
+	/* Фон страницы */
+	
+	body {
+		background: #000;
+		background: url('../materials/Images/Home/bgimage.jpg') center/cover no-repeat fixed;
+	}
+	
+	/* Модуль сроллбара */
+	::-webkit-scrollbar {
+		width: 5px;
+	}
+	
+	/* Трекер сроллбара */
+	::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		border-radius: 10px;
+	}
+	::-webkit-scrollbar-thumb {
+		border-radius: 0px;
+		background: rgba(255,0,0,0.9);
+		box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+	}
+	::-webkit-scrollbar-thumb:window-inactive {
+		background: rgba(0,0,0,0.0);
+	}
+	::-webkit-scrollbar-track-piece {
+		background-color: rgba(0,0,0,0.3);
+	}
+
+	/*Контент страницы*/
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+		overflow: hidden;
+		padding: 30px 30px 0 30px;
+	}
+
+	.container {
+		max-width: 1920px;
+		width: 100%;
+		margin: 0px auto;
+		flex: 1 1 auto;
+	}
+
+	@media (max-width:1920px) {
+		.container {
+			max-width: 1920px;
+		}
+	}
+
+	@media (max-width:1280px) {
+		.container {
+			max-width: 1280px;
+		}
+	}
+
+	@media (max-width:1200px) {
+		.container {
+			max-width: 970px;
+		}
+	}
+
+	@media (max-width:992px) {
+		.container {
+			max-width: 750px;
+		}
+	}
+
+	@media (max-width:767px) {
+		.container {
+			max-width: none;
+		}
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.header {
+		margin: 30px 0 70px 0;
+		opacity: 0%;
+		animation: in 1s ease-in 0s 1 forwards;
+	}
+
+	.middle {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		opacity: 0%;
+		animation: in 1.5s ease-in 0s 1 forwards;
+	}
+
+	.footer {
+		display: flex;
+		padding: 10px 0 10px 0;
+		opacity: 0%;
+		animation: in 2s ease-in 0s 1 forwards;
+	}
+
+	hr {
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		border-bottom: 1px solid rgb(100, 0, 0, 0.7);
+	}
+
+	/*Текст*/
+	.studio_name {
+		font-family: Jost, Arial, "Times New Roman", sans-serif;
+		font-size: 100px;
+		font-weight: 700;
+		font-style: normal;
+		letter-spacing: 20px;
+		color: rgba(255, 0, 0, 1.0);
+		text-align: center;
+	}
+
+	.studio_name span {
+		text-shadow: red 0px 0px 15px;
+		transition: text-shadow 1s ease-in-out 1s;
+		animation: morgalka 5s ease-in-out 0s infinite forwards;
+	}
+
+	.studio_subname {
+		font-family: Jost, Arial, "Times New Roman", sans-serif;
+		font-size: 20px;
+		font-weight: 200;
+		font-style: normal;
+		letter-spacing: 10px;
+		color: rgb(255, 255, 255);
+		text-align: center;
+	}
+
+	#text_nravki {
+		font-family: Jost, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 28px;
+		font-weight: 300;
+		font-style: italic;
+		letter-spacing: 5px;
+		color: white;
+		margin: 150px 120px 20px 0;
+		text-align: center;
+	}
+
+	#text_follow_us {
+		font-family: Jost, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 28px;
+		font-weight: 300;
+		font-style: italic;
+		letter-spacing: 5px;
+		color: white;
+		margin: 0 0 30px 90px;
+		text-align: center;
+	}
+
+	.ver {
+		position:fixed;
+		margin: 10px;
+	}
+
+	.ver span {
+		font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 14px;
+		color: rgba(255,0,0,1);
+		font-weight: 100;
+		text-shadow: 0 0 3px rgba(255,0,0,1);
+	}
+
+	.footer__text {
+		margin: 0px auto;
+		font-family: Jost, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 18px;
+		font-weight: 200;
+		font-style: normal;
+		color: white;
+	}
+
+	/* Линки */
+
+	#links_block {
+		display: flex;
+		text-align: center;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 20px 0 50px 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.item {
+		padding: 10px;
+		margin: 0 15px;
+	}
+
+	.item_image {
+		width: 50px;
+		border-radius: 25px;
+		transition: width 0.5s, border-radius 0.1s ease-out 0s
+	}
+
+	.item_image:hover {
+		width: 70px;
+		border-radius: 5px;
+	}
+
+	.text_block {
+		font-family: Jost, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 24px;
+		font-weight: 200;
+		font-style: normal;
+		letter-spacing: 3px;
+		color: aliceblue;
+		padding: 10px 0 10px 10px;
+	}
