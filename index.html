@@ -1,82 +1,210 @@
-<!DOCTYPE HTML>
-<html lang="ru">
+<!DOCTYPE html>
+<html onload="brython();">
 	<head>
-		<title>NFAS</title>
-		<meta charset=UTF-8/>
+		<title>NFox | ALT STUDIO</title>
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="css/null.css">
+		<link type="image/x-icon" href="media/images/ICO/favicon.ico" rel="shortcut icon">
+		<link type="Image/x-icon" href="media/images/ICO/favicon.ico" rel="icon">
+		<link rel="stylesheet" href="css/obnulator.css">
 		<link rel="stylesheet" href="css/style_index.css">
 		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/animations.css">
+		<script type="text/javascript" src="moduls/brython.js"></script>
+		<script type="text/javascript" src="moduls/brython_stdlib.js"></script>
 	</head>
 	<body>
-		<!-- Вся оболочка страницы -->
-		<div class="ver">
-			<span>Ver/0.8 --> 28.03.2023</span>
+		<!-- ПЛАШКА ВЕРСИИ -->
+		<div id="plashka_version">
+			<p>D09.12.2024</p>
+			<p>V1.0</p>
 		</div>
+		<!-- ОБОЛОЧКА СТРАНИЦЫ -->
 		<div class="wrapper">
-			<!-- Оболочка контейнера -->
+			<!-- БЛОК КОНТЕЙНЕР -->
 			<div class="container">
-				<!-- Оболочка контента -->
+				<!-- БЛОК КОНТЕНТ -->
 				<div class="content">
-					<!-- Оболочка хеадера -->
+					<!-- БЛОК HEADER -->
 					<div class="header">
-						<br>
-						<div class="studio_name">
+						<div id="logotype_container">
+							<svg id="logotype" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 251.9 403.46">
+								<path d="M282.11,56.7,267.52,264.32h-23L229.89,56.7,130.05,262.52,256,460.16,382,262.53Zm3.33,226.82L295.94,127l65,135.55L256,425.86,151,262.53l65-135.55,10.5,156.54Zm-3.37-7-.22,3.19h0Zm-51.91,3.19h0l-.22-3.19Z" transform="translate(-130.05 -56.7)"/>
+							</svg>
+						</div>
+						<div id="studio_name">
 							<span>NFAS</span>
 						</div>
-						<br>
-						<div class="studio_subname">
-							<span>★ NFox | ALTERNATIVE STUDIO</span>
+						<div id="studio_subname">
+							<span>NFOX | ALTERNATIVE STUDIO</span>
+						</div>
+						<div id="studio_subname_podpis">
+							<span>Студия мультимедийного творчества</span>
 						</div>
 					</div>
-					<!-- Оболочка основы -->
+					<hr>
+					<!-- БЛОК ОСНОВАНИЯ -->
 					<div class="middle">
-						<div class="logotype">
-							<img src="materials/Images/SVG/Logo.svg" alt="Logo">
+						<div id="block_first_image">
+							<img id="first_image" src="media/images/PNG/first.png" alt="">
+						</div>
+						<div id="block_description">
+							<p>
+								С щенячьего возраста мы восхищались творчеством великих компаний, таких как Marvel, Disney и DreamWorks, и мечтали создавать что-то столь же великолепное, а может быть, даже превосходящее их работы. Наша цель — дарить зрителям уникальные эмоции и создавать произведения искусства, достойные мирового признания.
+							</p>
+							<p>
+								Вдохновлённые этой идеей, мы заложили основу проекта NFox | ALT STUDIO, поставив перед собой амбициозную цель — достигать новых высот в творчестве, обмениваться опытом и постоянно совершенствовать свои навыки.
+							</p>
+							<p>
+								Приглашаем вас присоединиться к NFAS — нашей студии мультимедийного творчества, где вас ждут увлекательные приключения. От простых рисунков и фотографий до масштабных видеороликов и 3D-моделей, а в некоторых проектах мы даже используем нейросетевую обработку. В нашем чате «Червоточина» вы найдёте дружелюбное общение и полезные советы.
+							</p>
+							<p>
+								Мы можем не быть профессионалами во всём, но открыты к новым знаниям и экспериментам. Мы рады сотрудничеству и готовы к коллабам.
+							</p>
+							<p>
+								Благодарим каждого из вас за поддержку! Ваша мотивация и отзывы помогают нам двигаться вперёд и становиться лучше~
+							</p>
+							<p>
+								Подписывайтесь на нас и будьте активны, хвостики!~
+							</p>
+							<p>
+								❤️ Тия и Рэй, создатели «NFox | ALTERNATIVE STUDIO» ❤️
+							</p>
 						</div>
 						<hr>
-						<div class="text_block">
-							<span>T: Приветик! Меня зовут Тия.</span>
+						<div class="text_caption">
+							<span>▼ Команда NFAS ▼</span>
+						</div>
+						<div class="block_links">
+							<a class="item" target="_blank" href="https://t.me/ArikoDog">
+								<img class="item_image" src="media/images/JPG/team/ariko.jpg" alt="Airko">
+								<hr class="vertical_line">
+								<span>Ariko</span>
+								<hr class="vertical_line">
+							</a>
+							<a class="item" target="_blank" href="https://t.me/RealNFox">
+								<img class="item_image" src="media/images/JPG/team/ray.jpg" alt="Ray">
+								<hr class="vertical_line">
+								<span>Ray</span>
+								<hr class="vertical_line">
+							</a>
+							<a class="item" target="_blank" href="https://t.me/RealTiya">
+								<img class="item_image" src="media/images/JPG/team/tiya.jpg" alt="Tiya">
+								<hr class="vertical_line">
+								<span>Tiya</span>
+								<hr class="vertical_line">
+							</a>
 						</div>
 						<hr>
-						<div class="text_block">
-							<span>R: А меня - Рэй. Мы вместе написали этот сайт.</span>
+						<div class="text_caption">
+							<span>▼ Связь ▼</span>
+						</div>
+						<div class="block_links">
+							<a class="item" target="_blank" href="mailto:nfox.alt.studio+subscribers@gmail.com">
+								<img class="item_image" src="media/images/PNG/icons/Gmail.png" alt="GMail">
+								<hr class="vertical_line">
+								<span>Написать нам~</span>
+								<hr class="vertical_line">
+							</a>
 						</div>
 						<hr>
-						<div class="text_block">
-							<span>T: Сайт-визитку, лисёнок!</span>
+						<div class="text_caption">
+							<span>▼ Следуй за нами ▼</span>
+						</div>
+						<div class="block_links">
+							<a class="item" target="_blank" href="https://t.me/realnfas">
+								<img class="item_image" src="media/images/PNG/icons/Telegram.png" alt="Telegram">
+								<hr class="vertical_line">
+								<span>Telegram</span>
+								<hr class="vertical_line">
+							</a>
+							<a class="item" target="_blank" href="https://www.artstation.com/realnfas">
+								<img class="item_image" src="media/images/PNG/icons/ArtStation.png" alt="ArtStation">
+								<hr class="vertical_line">
+								<span>ArtStation</span>
+								<hr class="vertical_line">
+							</a>
+							<a class="item" target="_blank" href="https://soundcloud.com/realnfas">
+								<img class="item_image" src="media/images/PNG/icons/SoundCloud.png" alt="SoundCloud">
+								<hr class="vertical_line">
+								<span>SoundCloud</span>
+								<hr class="vertical_line">
+							</a>
+							<a class="item" target="_blank" href="https://www.youtube.com/@realnfas">
+								<img class="item_image" src="media/images/PNG/icons/YouTube.png" alt="YouTube">
+								<hr class="vertical_line">
+								<span>YouTube</span>
+								<hr class="vertical_line">
+							</a>
+							<a class="item" target="_blank" href="https://sketchfab.com/realnfas">
+								<img class="item_image" src="media/images/PNG/icons/Sketchfab.png" alt="Sketchfab">
+								<hr class="vertical_line">
+								<span>Sketchfab</span>
+								<hr class="vertical_line">
+							</a>
+							<a class="item" target="_blank" href="https://author.today/u/realnfas">
+								<img class="item_image" src="media/images/PNG/icons/AuthorToday.png" alt="Author.Today">
+								<hr class="vertical_line">
+								<span>Author.Today</span>
+								<hr class="vertical_line">
+							</a>
+							<a class="item" target="_blank" href="https://boosty.to/realnfas">
+								<img class="item_image" src="media/images/PNG/icons/Boosty.png" alt="Boosty">
+								<hr class="vertical_line">
+								<span>Boosty</span>
+								<hr class="vertical_line">
+							</a>
+							<a class="item" target="_blank" href="https://ru.pinterest.com/realnfas">
+								<img class="item_image" src="media/images/PNG/icons/Pinterest.png" alt="Pinterest">
+								<hr class="vertical_line">
+								<span>Pinterest</span>
+								<hr class="vertical_line">
+							</a>
 						</div>
 						<hr>
-						<div class="text_block">
-							<span>R: Да, сайт-визитку, друзья.</span>
+						<div class="text_caption">
+							<span>▼ Поддержать нас ▼</span>
 						</div>
-						<hr>
-						<div class="text_block">
-							<span>T: Спасибо, что вы поддерживаете нас, лапки!</span>
-						</div>
-						<hr>
-						<span id="text_nravki">Правда нравится?</span>
-						<span id="text_follow_us">Следуй за нами!</span>
-						<div id="links_block">
-							<a class="item" target="_blank" href="https://t.me/realnfas"><img class="item_image" src="icons/TG_icon.png" alt="TG"></a>
-							<!-- <a class="item" target="_blank" href="https://vk.com/real_nfas"><img class="item_image" src="icons/VK_icon.png" alt="VK"></a> -->
-							<a class="item" target="_blank" href="https://www.youtube.com/channel/UCjrJmeXb_ElqOvUg_5EaoCw"><img class="item_image" src="icons/YT_icon.png" alt="YT"></a>
-							<a class="item" target="_blank" href="https://www.artstation.com/realnfox"><img class="item_image" src="icons/AS_icon.png" alt="AS"></a>
-							<a class="item" target="_blank" href="https://soundcloud.com/realnfox"><img class="item_image" src="icons/SC_icon.png" alt="Soundcloud"></a>
-							<a class="item" target="_blank" href="https://www.furaffinity.net/user/nfas/"><img class="item_image" src="icons/FUR_icon.png" alt="Furaffinity"></a>
-							<a class="item" target="_blank" href="https://ficbook.net/authors/1632327"><img class="item_image" src="icons/FB_icon.png" alt="FicBook"></a>
-							<a class="item" target="_blank" href="https://www.pinterest.ru/realnfox"><img class="item_image" src="icons/Pin_icon.png" alt="Pinterest"></a>
+						<div class="block_links">
+							<a class="item" target="_blank" href="https://www.donationalerts.com/r/nfox_alt_studio">
+								<img class="item_image" src="media/images/PNG/icons/DonationAlerts.png" alt="DonationAlerts">
+								<hr class="vertical_line">
+								<span>DonationAlerts</span>
+								<hr class="vertical_line">
+							</a>
+							<a class="item" target="_blank" href="https://donatty.com/realnfas">
+								<img class="item_image" src="media/images/PNG/icons/Donatty.png" alt="Donatty">
+								<hr class="vertical_line">
+								<span>Donatty</span>
+								<hr class="vertical_line">
+							</a>
+							<a class="item" target="_blank" href="https://new.donatepay.ru/@realnfas">
+								<img class="item_image" src="media/images/PNG/icons/DonatePay.png" alt="DonatePay">
+								<hr class="vertical_line">
+								<span>DonatePay</span>
+								<hr class="vertical_line">
+							</a>
+							<a class="item" target="_blank" href="https://destream.net/live/NFox/donate">
+								<img class="item_image" src="media/images/PNG/icons/Destream.png" alt="Destream">
+								<hr class="vertical_line">
+								<span>Destream</span>
+								<hr class="vertical_line">
+							</a>
+							<a class="item" target="_blank" href="https://yoomoney.ru/fundraise/aiRB6QQZyjg.240102">
+								<img class="item_image" src="media/images/PNG/icons/ЮMoney.png" alt="ЮMoney">
+								<hr class="vertical_line">
+								<span>ЮMoney</span>
+								<hr class="vertical_line">
+							</a>
 						</div>
 					</div>
-				</div>
-			</div>
-			<!-- Оболочка футера Синий цвет -->
-			<div class="footer">
-				<div class="footer__text">
-					<span>Все права защищены ★ NFAS 2023</span>
 				</div>
 			</div>
 		</div>
 	</body>
+	<footer>
+		<!-- ПОДВАЛ -->
+		<div id="text_footer"></div>
+	</footer>
+	<script type="text/python" src="python/scripts.py"></script>
 </html>
