@@ -30,36 +30,6 @@ body {
 	margin: 0px auto;
 }
 
-@media (max-width:1920px) {
-	.container {
-		max-width: 1920px;
-	}
-}
-
-@media (max-width:1280px) {
-	.container {
-		max-width: 1280px;
-	}
-}
-
-@media (max-width:1200px) {
-	.container {
-		max-width: 970px;
-	}
-}
-
-@media (max-width:992px) {
-	.container {
-		max-width: 750px;
-	}
-}
-
-@media (max-width:767px) {
-	.container {
-		max-width: none;
-	}
-}
-
 /* БЛОК КОНТЕНТ */
 .content {
 	display: flex;
